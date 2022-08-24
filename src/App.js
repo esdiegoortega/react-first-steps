@@ -2,7 +2,11 @@ import { Add } from "./components/Add";
 import { MovieList } from "./components/MovieList";
 import { Search } from "./components/Search";
 
+import { useState } from "react";
+
 function App() {
+  const [stateList, setStateList] = useState([]);
+
   return (
     <div className="layout">
 
@@ -26,13 +30,13 @@ function App() {
 
         {/* Main - List Of Movies */}
         <section className="content">
-          <MovieList  />
+          <MovieList stateList={ stateList } setStateList={ setStateList } />
         </section>
 
         {/* Lateral Bar */}
         <aside className="lateral">
           <Search />
-          <Add />
+          <Add setStateList={ setStateList } />
         </aside>
 
         {/* Footer */}
