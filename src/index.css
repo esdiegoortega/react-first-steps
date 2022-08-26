@@ -114,6 +114,20 @@ body{
   padding-right: 25px;
 }
 
+.edit-item{
+  flex-grow: 1;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 6px #ddd;
+  margin: 20px;
+  margin-left: 30px;
+  margin-right: 30px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
 button,
 input[type="submit"],
 input[type="button"]{
@@ -138,6 +152,10 @@ input[type="button"]{
 
 .movie-item .edit:hover{
   background: #e7b000;
+}
+
+.movie-item .save:hover{
+  background: #07c054;
 }
 
 .movie-item .delete:hover{
@@ -165,21 +183,28 @@ input[type="button"]{
 
 .lateral input[type="text"],
 .lateral input[type="text"],
-.lateral textarea
+.lateral textarea,
+.edit_form input[type="text"],
+.edit_form input[type="text"],
+.edit_form textarea
 {
- display:block;
- margin: 0 auto;
- margin-top: 15px;
- padding: 12px;
- border-radius: 5px;
- background: #f6f7f9;
- color: #454545;
- width: 80%;
- opacity: 4;
- outline: 0;
- border-color: transparent;
+    display: block;
+    margin: 0 auto;
+    margin-top: 15px;
+    padding: 12px;
+    border-radius: 5px;
+    background: #f6f7f9;
+    color: #454545;
+    width: 80%;
+    opacity: 4;
+    outline: 0;
+    border-color: transparent;
 }
 
+.edit_form{
+    border-top: 1px solid #ddd;
+    margin-top: 10px;
+}
 /* Footer Styles */
 .footer{
   grid-area: footer;
